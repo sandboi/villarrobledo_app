@@ -11,7 +11,11 @@
 		<script src="js/jquery.mobile-1.4.5.min.js"></script>
 		<script>
 			function cargaNoticias() {
-				alert("Estar, estoy");
+				$.ajax({
+				  url: "http://villarrobledo.com/app/listado_noticias.php"
+				}).done(function(data) { // data what is sent back by the php page
+				  $('#noticias').html(data); // display data
+				});
 			}
 		</script>
 	</head>
