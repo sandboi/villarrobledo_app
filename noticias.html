@@ -9,19 +9,20 @@
 		<link type="text/css" rel="stylesheet" href="css/style.css" />
 		<script src="js/jquery-1.12.0.min.js"></script>
 		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+		<script src="js/debuggap.js"></script>
 		<script>
 			function cargaNoticias() {
 				alert("Estar, estoy");
 			}
 		</script>
 	</head>
-	<body>
+	<body onload="cargaNoticias()">
 		<div data-role="page" class="inicio">
 			<div data-role="header" data-theme="b">
 				<h2>Noticias</h2>
 			</div><!-- /header -->
 			<div data-role="content">
-				<p onclick="cargaNoticias()">Últimas noticias en versión 102</p>
+				<p>Últimas noticias en versión 102</p>
 				<div id="noticias">
 				</div><!-- /noticias -->
 			</div><!-- /content -->
